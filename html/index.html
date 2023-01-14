@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- My style -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Portfólio</title>
+</head>
+
+<body id="home">
+
+  <main class="home grid">
+
+
+    <!-- !Transition overlay -->
+    <div class="home__overlay"></div>
+
+    <!-- !Navigation -->
+    <nav class="nav">
+      <div class="nav__logo ">
+        <h1 class="nav__logo__title">
+          Desenvolvedor
+          <span>front end</span>
+        </h1>
+      </div>
+
+      <ul class="nav__links">
+        <li class="nav__links-items"><a href="./about.html">Sobre.</a></li>
+        <li class="nav__links-items"><a href="./techs.html">Techs.</a></li>
+        <li class="nav__links-items"><a href="./projects.html">Projetos.</a></li>
+        <li class="nav__links-items"><a href="./contact.html">Contato.</a></li>
+      </ul>
+    </nav>
+
+    <!-- !Container -->
+    <section class="home__container">
+      <div class="home__container--text">
+        <h1>Portfólio</h1>
+        <p>Matheus Brenner</p>
+      </div>
+
+      <!-- !Medias -->
+      <div class="home__container--media media">
+        <ul class="media__links">
+          <li class="media__links--items"><a href="#"><i class="fa fa-github"></i></a></li>
+          <li class="media__links--items"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li class="media__links--items"><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+
+
+
+      <!-- !Elipse animated -->
+      <div class="home__container--ellipse">
+        <div class="ellipse-container">
+          <div class="ellipse thin"></div>
+          <div class="ellipse thick"></div>
+          <div class="ellipse red"></div>
+        </div>
+      </div>
+
+      <!-- !Footer -->
+      <footer class="home__footer footer">
+        <span>Feito por Matheus Brenner &copy;</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- !Tweenmax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <!-- !My script -->
+  <script src="/assets/js/home.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+//Global
+@use './global/variables';
+@use './global/global';
+@use './global/components';
+@use './global/bar';
+//Home
+@use './home/home';
+//About
+@use './about/about';
+//techs
+@use './techs/techs';
+//Contact
+@use './contact/contact';
+//Projects
+@use './projects/projects'

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons --> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Slide -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" >
+
+  <!-- !Favcon -->
+  <link rel="shortcut icon" href="/assets/Img/Vector.png" type="image/x-icon">
+
+  <!-- My style -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Portfólio</title>
+</head>
+
+<body id="techs">
+
+  <main class="techs grid">
+    <!-- !Transition overlay -->
+    <div class="techs__overlay temp"></div>
+    <div class="techs__overlay first-block"></div>
+    <div class="techs__overlay second-block"></div>
+
+    <!-- !Navigation -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <h1 class="nav__logo__title">
+          Desenvolvedor
+          <span>front end</span>
+        </h1>
+      </div>
+
+      <ul class="nav__links">
+        <li class="nav__links-items"><a href="./index.html">Início.</a></li>
+        <li class="nav__links-items"><a href="./about.html">Sobre.</a></li>
+        <li class="nav__links-items"><a href="./projects.html">Projetos.</a></li>
+        <li class="nav__links-items"><a href="./contact.html">Contato.</a></li>
+      </ul>
+    </nav>
+
+    <!-- !Container -->
+    <section class="techs__container">
+      <div class="techs__container--text page-title">
+        <h1>Techs</h1>
+      </div>
+
+      <!-- Techs mobile -->
+     
+      <ul class="techs__container--mobile">    
+        <li><i class="fa-brands fa-html5"></i>HTML5</li>
+        <li><i class="fa-brands fa-css3"></i>CSS3</li>
+        <li><i class="fa-brands fa-js"></i>Javascript</li>
+        <li><i class="fa-brands fa-sass"></i>SASS</li>
+        <li><i class="fa-brands fa-wordpress"></i>Wordpress</li>
+        <li><i class="fa-brands fa-figma"></i>Figma</li>
+        <li><i class="fa-brands fa-git"></i>Git</li>
+        <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
+      </ul>
+      <!-- !Carousel -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/assets/Img/TechHTML.jpg" alt="">
+            <ul>
+              <li>Semântica</li>
+              <li>Estrutura base</li>
+              <li>SEO</li>
+              <li>Estrutura BEM</li>
+              <li>Tables</li>
+              <li>Metatags</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/Img/TechCSS.jpg" alt="">
+            <ul>
+              <li>Position</li>
+              <li>Flexbox</li>
+              <li>Grid Layout</li>
+              <li>Animation</li>
+              <li>Pseudo seletores</li>
+              <li>Variáveis</li>
+              <li>Barba CSS</li>
+              <li>Parallax</li>
+              <li>BEM CSS</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/Img/TechJS.jpg" alt="">
+            <ul>
+              <li>Variáveis: Const, Let e Var</li>
+              <li>DOM</li>
+              <li>Arrays</li>
+              <li>Functions</li>
+              <li>Lógica de programação</li>
+              <li>Operação ternária</li>
+              <li>Valores primitivos</li>
+              <li>Estrutura de repetição</li>
+              <li>Ajax</li>
+              <li>Promisses</li>
+              <li>Fetch</li>
+              <li>Async/Await</li>
+              <li>Expressões Reguláres</li>
+              <li>Glider.JS</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/Img/TechSASS.jpg" alt="">
+            <ul>
+              <li>Nesting</li>
+              <li>Variáveis</li>
+              <li>Mixins</li>
+              <li>Partials</li>
+              <li>Operador de seleção</li>
+              <li>SASS e SCSS</li>
+              <li>Functions de SASS</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/Img/TechGit.jpg" alt="">
+            <ul>
+              <li>Git fundamentos</li>
+              <li>Branches</li>
+              <li>Compartilhamento de repositórios</li>
+              <li>Commits</li>
+              <li>Markdown</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/Img/TechFigma.jpg" alt="">
+            <ul>
+              <li>UI/UX Design básico com Figma</li>
+              <li>Protótilios</li>
+              <li>Wireframe</li>
+              <li>Plugins</li>
+              <li>Operador de seleção</li>
+              <li>Ferramentas</li>
+              <li>Efeitos</li>
+              <li>Layouts</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/Img/TechWordpress.jpg" alt="">
+            <ul>
+              <li>Painel Admin</li>
+              <li>Configurações gerais</li>
+              <li>Menu de aparência</li>
+              <li>Temas</li>
+              <li>Plugins</li>
+              <li>Posts</li>
+              <li>Elementor Free e Pro</li>
+              <li>Hospedagem com Cpanel e Hpanel</li>
+              <li>Dropshipings</li>
+              <li>Segurança WordPress</li>
+            </ul>
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/Img/TechBootstrap.jpg" alt="">
+          
+          </div> 
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- !Medias -->
+      <div class="techs__container--media media">
+        <ul class="media__links">
+          <li class="media__links--items"><a href="#"><i class="fa-brands fa-github"></i></a></li>
+          <li class="media__links--items"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+          <li class="media__links--items"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- !Footer -->
+      <footer class="techs__footer footer">
+        <span>Feito por Matheus Brenner &copy;</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- !Tweenmax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <!-- Slide js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- !My script -->
+  <script src="/assets/js/techs.js" defer></script>
+
+  <script>
+ 
+  </script>
+</body>
+
+</html>

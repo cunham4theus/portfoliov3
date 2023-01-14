@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- My style -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Portfólio</title>
+</head>
+
+<body id="contact">
+
+  <main class="contact grid">
+    <!-- !Transition overlay -->
+    <div class="contact__overlay--1"></div>
+
+    <!-- !Navigation -->
+    <nav class="nav">
+      <div class="nav__logo">
+        <h1 class="nav__logo__title">
+          Desenvolvedor
+          <span>front end</span>
+        </h1>
+      </div>
+
+      <ul class="nav__links">
+        <li class="nav__links-items"><a href="./index.html">Início.</a></li>
+        <li class="nav__links-items"><a href="./about.html">Sobre.</a></li>
+        <li class="nav__links-items"><a href="./techs.html">Techs.</a></li>
+        <li class="nav__links-items"><a href="./projects.html">Projetos.</a></li>
+
+      </ul>
+
+    </nav>
+ 
+    <!-- !Container -->
+    <section class="contact__container">
+      <div class="contact__container--text page-title">
+        <h1>Contato</h1>
+      </div>
+
+      <div class="contact__container-form">
+        <div class="contact__container-foto">
+        </div>
+        <form action="" class="form" method="POST" data-netlify="true">
+          <div class="form__group">
+            <label for="name" class="form__label">Nome</label>
+            <input type="text" class="form__input" placeholder="Nome Completo" id="name" required>
+          </div>
+          <div class="form__group">
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="5" id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+          </div>
+          <div class="form__group">
+            <button type="submit" class="contact__container-description--btn btn"><span>Enviar</span><i></i></button>
+          </div>
+        </form>
+      </div>
+      <!-- !Medias -->
+      <div class="contact__container-media">
+        <div class="personal">
+          <p><i class="fa fa-phone"></i>34 996877038</p>
+          <p><i class="fa fa-envelope"></i>cunhamatheus.m4@gmail.com</p>
+        </div>
+        <ul class="social">
+          <li><a class="media-github" href="https://github.com/cunham4theus" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a class="media-insta" href="https://www.instagram.com/cunham4theus/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a class="media-linkedin" href="https://www.linkedin.com/in/cunham4theus/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <!-- !Medias mobile-->
+      <div class="contact__container--media media">
+        <ul class="media__links">
+          <li class="media__links--items"><a href=""><i class="fa fa-github"></i></a></li>
+          <li class="media__links--items"><a href=""><i class="fa fa-linkedin"></i></a></li>
+          <li class="media__links--items"><a href=""><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+
+      <!-- !Footer -->
+      <footer class="contact__footer footer">
+        <span>Feito por Matheus Brenner &copy;</span>
+      </footer>
+    </section>
+
+  </main>
+
+  <!-- !Tweenmax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <!-- !My script -->
+  <script src="/assets/js/contact.js" defer></script>
+</body>
+
+</html>

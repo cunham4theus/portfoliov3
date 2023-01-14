@@ -1,0 +1,172 @@
+@use '../global/variables' as *;
+@use '../global/mixins' as *;
+
+// Overlay
+.home__overlay {
+  position: absolute;
+  width: 100%;
+  height: 0vh;
+  background-image: url('/assets/Img/bgHome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 0%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(#1d0101, 0.3) 60%,
+      rgba(#000000, 0.5) 70%,
+      rgba(#000000, 0.7) 90%
+    );
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+//Home
+
+.home {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+
+  &__container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-content: center start;
+    position: relative;
+    overflow: hidden;
+
+    @include respond(phone) {
+      place-content: center;
+    }
+
+    &--text {
+      position: absolute;
+      right: 10%;
+      top: 4%;
+      display: flex;
+      flex-direction: column;
+      z-index: 20;
+
+      @include respond(phone) {
+        top: 10rem;
+      }
+
+      @include respond(tab-port) {
+        top: 14rem;
+      }
+
+      h1 {
+        font-size: clamp(5rem, 8vw, 8rem);
+        font-weight: 400;
+
+        @include respond(tab-port) {
+          font-size: 8rem;
+        }
+      }
+
+      h1::first-letter {
+        color: $mycolor-primary;
+      }
+
+      p {
+        font-size: 2rem;
+        align-self: flex-end;
+        padding-right: 1rem;
+
+        @include respond(tab-port) {
+          font-size: 2.6rem;
+        }
+      }
+    }
+
+    .ellipse-container {
+      width: clamp(50.8rem, 58vw, 52rem);
+      height: clamp(50.8rem, 58vw, 52rem);
+      position: relative;
+      border-radius: 50%;
+      margin: 0 auto;
+      z-index: 10;
+      background-image: url('/assets/Img//bgHome.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      box-shadow: 0 0 15px $mycolor-primary-dark;
+      margin-left: -5rem;
+      display: block;
+
+      @include respond(phone) {
+        display: block;
+      }
+
+      .ellipse {
+        position: absolute;
+        top: 0;
+        border-radius: 50%;
+        border-style: solid;
+        z-index: 10;
+      }
+
+      // .ellipse.thin {
+      //   width: 100%;
+      //   height: 100%;
+      //   border-color: #fff;
+      //   opacity: 1;
+      //   z-index: -1;
+      // }
+
+      .ellipse.thick {
+        width: 100%;
+        height: 100%;
+        border-width: clamp(0.8rem, 1vw, 1rem);
+        border-color: #fff;
+        transform: rotate(-45deg);
+        top: -0rem;
+        left: -0rem;
+        z-index: 1;
+
+        @include respond(tab-port) {
+        }
+      }
+
+      .ellipse.red {
+        width: 100%;
+        height: 100%;
+        border-width: clamp(0.8rem, 1vw, 1rem);
+        border-color: $mycolor-primary transparent;
+        transform: rotate(-45deg);
+        top: 0rem;
+        left: 0rem;
+        animation: ellipseRotate 15s ease-in-out infinite;
+        z-index: 20;
+
+        @include respond(tab-port) {
+        }
+      }
+    }
+  }
+}
+
+// Elipse animation
+@keyframes ellipseRotate {
+  0% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
