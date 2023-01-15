@@ -8,7 +8,7 @@ TweenMax.to('.home__overlay', 2, {
 
 TweenMax.to('.home__overlay', 2, {
   delay: 0.2,
-  height: '100vh',
+  height: '100%',
   ease: Expo.easeInOut,
 });
 

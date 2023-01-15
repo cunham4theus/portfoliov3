@@ -425,7 +425,7 @@ ul {
 .home__overlay {
   position: absolute;
   width: 100%;
-  height: 0vh;
+  height: 0%;
   background-image: url("/assets/Img/bgHome.jpg");
   background-size: cover;
   background-repeat: no-repeat;
