@@ -68,7 +68,7 @@ ul {
 
 .grid {
   display: grid;
-  max-width: 160rem;
+  max-width: 140rem;
   margin: 0 auto;
   height: 100%;
   background-color: #fff;
@@ -451,6 +451,7 @@ ul {
 .home {
   height: 100%;
   position: relative;
+  border: 1px solid red;
 }
 .home__container {
   display: grid;
