@@ -283,7 +283,7 @@
 //Button
 .btn {
   position: relative;
-  background-color: $mycolor-primary-light;
+  background-color: $mycolor-primary-dark;
   text-decoration: none;
   letter-spacing: 0.1rem;
   padding: 1.4rem 3rem;
@@ -292,7 +292,7 @@
   border-radius: 4px;
 
   &:hover {
-    color: $mycolor-primary-light;
+    color: $mycolor-primary-dark;
     letter-spacing: 0.15rem;
   }
   &::before {
@@ -305,6 +305,9 @@
       rgba($mycolor-primary-dark-2, 1)
     );
     border-radius: 4px;
+    top: -10px;
+    left: -10px;
+    width: 100%;
   }
   span {
     position: relative;
