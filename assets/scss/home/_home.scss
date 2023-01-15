@@ -17,7 +17,7 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  overflow: hidden;
+  
 
   &::after {
     content: '';
@@ -36,8 +36,7 @@
 }
 //Home
 
-.home {
-  overflow: hidden;
+.home { 
   height: 100%;
   position: relative;
 

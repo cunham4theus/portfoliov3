@@ -437,7 +437,6 @@ ul {
   justify-content: center;
   align-items: center;
   color: #fff;
-  overflow: hidden;
 }
 .home__overlay::after {
   content: "";
@@ -450,7 +449,6 @@ ul {
 }
 
 .home {
-  overflow: hidden;
   height: 100%;
   position: relative;
 }
