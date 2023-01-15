@@ -13,18 +13,10 @@ TweenMax.to('.home__overlay', 2, {
 });
 
 TweenMax.to('.nav', 2, {
-  delay: 2.2,  
+  delay: 2.3,  
   opacity: 1,
   ease: Expo.easeInOut,
 });
-
-TweenMax.from('.home__container--text h1', 1, {
-  delay: 3,
-  opacity: 0,
-  x: 200,
-  ease: Expo.easeInOut,
-});
-
 TweenMax.from('.home__container--text h1', 1, {
   delay: 3,
   opacity: 0,
@@ -40,7 +32,7 @@ TweenMax.from('.home__container--text p', 1, {
 });
 
 TweenMax.from('.ellipse-container', 1, {
-  delay: 3,
+  delay: 3.4,
   opacity: 0,
   ease: Expo.easeInOut,
 });

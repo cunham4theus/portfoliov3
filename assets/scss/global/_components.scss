@@ -8,7 +8,7 @@
   margin: 0 auto;
   height: 100%;
   min-height: 100%;
-  contain-intrinsic-height: 100%;  
+  contain-intrinsic-height: 100%;
   background-color: $mycolor-primary-light;
   background-image: url('https://www.transparenttextures.com/patterns/skulls.png');
   position: relative;
@@ -118,6 +118,7 @@
     padding-bottom: 2rem;
     width: 100%;
     z-index: 10;
+    gap: .2rem;
 
     @include respond(phone) {
       padding-bottom: 5rem;
@@ -145,8 +146,7 @@
         text-transform: uppercase;
         width: 100%;
         display: block;
-        padding: 1rem;
-        height: 4rem;
+        padding: 0.5rem;       
 
         @include respond(phone) {
           font-size: 1.8rem;
@@ -177,14 +177,13 @@
   right: 4rem;
   top: 1rem;
 
-
   h1 {
     font-size: 4rem;
     font-weight: 400;
 
-   @include respond(phone) {
-    font-size: 6rem;
-   }
+    @include respond(phone) {
+      font-size: 6rem;
+    }
   }
 
   h1::first-letter {
@@ -306,7 +305,7 @@
       rgba($mycolor-primary-dark, 1),
       rgba($mycolor-primary-dark-2, 1)
     );
-    border-radius: 4px;   
+    border-radius: 4px;
     width: 100%;
   }
   span {
