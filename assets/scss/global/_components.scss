@@ -287,13 +287,13 @@
   background-color: $mycolor-primary-dark;
   text-decoration: none;
   letter-spacing: 0.1rem;
-  padding: 1.4rem 3rem;
+  padding: 1rem 3rem;
   transition: 0.5s;
   color: $mycolor-primary-light;
   border-radius: 4px;
 
   &:hover {
-    color: $mycolor-primary-dark;
+    color: $mycolor-primary-light;
     letter-spacing: 0.15rem;
   }
   &::before {
