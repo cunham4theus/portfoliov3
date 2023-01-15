@@ -25,6 +25,13 @@ TweenMax.from('.home__container--text h1', 1, {
   ease: Expo.easeInOut,
 });
 
+TweenMax.from('.home__container--text h1', 1, {
+  delay: 3,
+  opacity: 0,
+  x: 200,
+  ease: Expo.easeInOut,
+});
+
 TweenMax.from('.home__container--text p', 1, {
   delay: 3,
   opacity: 0,

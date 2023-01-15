@@ -80,7 +80,7 @@
     height: max-content;
     padding-bottom: 2rem;
     margin-top: -4rem;
-    overflow-y: hidden; 
+   
     
     @include respond(phone) {
       overflow: hidden;
@@ -99,7 +99,9 @@
       gap: 2rem;  
       place-content: left;
       margin-left: 2rem;      
-      width: calc(100% + 35rem); 
+      width: calc(40rem);
+      overflow-y: hidden;  
+      padding: 4rem 2rem;
 
       @include respond(phone) {
        display: none;

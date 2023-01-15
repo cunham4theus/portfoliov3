@@ -2,8 +2,24 @@ var swiper = new Swiper('.mySwiper', {
   effect: 'cards',
   grabCursor: true,
 });
-
+TweenMax.staggerFrom(
+  '.projects__container--mobile .projects__container-mobile--cards',
+  1,
+  {
+    delay: 3.2,
+    opacity: 0,
+    x: -100,
+    ease: Expo.easeInOut,
+  },
+  0.08,
+);
 TweenMax.from('.projects__container--text h1', 1, {
+  delay: 3,
+  opacity: 0,
+  x: 200,
+  ease: Expo.easeInOut,
+});
+TweenMax.from('.projects__container-mobile', 1, {
   delay: 3,
   opacity: 0,
   x: 200,

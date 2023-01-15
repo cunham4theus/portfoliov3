@@ -24,6 +24,12 @@ TweenMax.from('.techs__container--text', 1, {
   x: 200,
   ease: Expo.easeInOut,
 });
+TweenMax.from('.techs__container--mobile', 1, {
+  delay: 5.2,
+  opacity: 0,
+  x: 200,
+  ease: Expo.easeInOut,
+});
 TweenMax.from('.nav__logo', 1, {
   delay: 5,
   opacity: 0,
@@ -42,7 +48,7 @@ TweenMax.staggerFrom(
   0.08,
 );
 TweenMax.to('.nav', 2, {
-  delay: 3.2,
+  delay: 4.2,
   height: '100vh',
   opacity: 1,
   ease: Expo.easeInOut,
