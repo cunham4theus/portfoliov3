@@ -81,12 +81,15 @@
   &__container {
     display: flex;
     align-items: center;
-    justify-content: center;  
-    width: 100%;   
-    padding-right: 2rem; 
-    margin-top: -22rem;
+    justify-content: center;
+    width: 100%;
+    padding-right: 2rem;
+    margin-top: -8rem;
 
     @include respond(phone) {
+      overflow: hidden;
+      margin-top: -22rem;
+      padding-inline: 3rem;
     }
 
     &--mobile {
@@ -94,11 +97,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding-right: 2.6rem;
-      width: 100%;
+      padding-right: 6rem;
+      padding-left: 132rem;
+      width: 30rem;
       gap: 4rem;
-      flex-wrap: wrap;
-      margin-top: 15rem;     
+      padding-bottom: 1rem;
+      overflow-y: hidden;
 
       @include respond(phone) {
         display: none;
@@ -108,39 +112,45 @@
         font-size: 2rem;
         display: flex;
         flex-direction: column;
-        gap: .5rem;
+        gap: 1rem;
         justify-content: center;
         align-items: center;
         i {
-          font-size: 5rem;
-        }
+          font-size: 13rem;
+          color: $mycolor-primary-dark;
+        
+        }      
+      }
+      li:last-child {
+        visibility: hidden;
+        padding-left: 80rem;
       }
     }
 
     // Slide
-    .swiper {      
-      max-width: 100%;       
+    .swiper {
+      max-width: 100%;
       box-shadow: 0 0 15px $mycolor-primary-dark;
       border-radius: 4px;
       position: relative;
       display: none;
 
       @include respond(phone) {
-        width: clamp(52rem, 75vw, 75rem);        
+        width: clamp(52rem, 75vw, 75rem);
         max-width: 120rem;
         height: 35rem;
         display: block;
       }
 
       @include respond(tab-port) {
-        width: clamp(75rem, 102vw, 102rem);        
+        width: clamp(75rem, 102vw, 102rem);
         max-width: 120rem;
         height: 45rem;
         display: block;
       }
 
       @include respond(tab-land) {
-        width: clamp(100rem, 120vw, 120rem);        
+        width: clamp(100rem, 120vw, 120rem);
         max-width: 120rem;
         height: 55rem;
         display: block;
@@ -187,8 +197,8 @@
           }
 
           ul {
-            padding-top: 2rem; 
-            margin-left: 2rem;           
+            padding-top: 2rem;
+            margin-left: 2rem;
             list-style: square;
             flex-wrap: wrap;
             width: 100%;
@@ -199,18 +209,18 @@
             column-gap: 4rem;
             display: none;
 
-            @include respond(phone) {              
+            @include respond(phone) {
               display: flex;
             }
 
             li {
               font-size: 1.4rem;
 
-              @include respond(phone) {              
+              @include respond(phone) {
                 font-size: 1.8rem;
               }
 
-              @include respond(tab-port) {              
+              @include respond(tab-port) {
                 font-size: 2rem;
               }
             }

@@ -353,8 +353,6 @@ ul {
   inset: 0px;
   background-image: linear-gradient(to bottom, #03232c, #035468);
   border-radius: 4px;
-  top: -10px;
-  left: -10px;
   width: 100%;
 }
 .btn span {
@@ -798,18 +796,26 @@ ul {
   justify-content: center;
   width: 100%;
   padding-right: 2rem;
-  margin-top: -22rem;
+  margin-top: -8rem;
+}
+@media (min-width: 37.5rem) and (min-height: 37.5rem) {
+  .techs__container {
+    overflow: hidden;
+    margin-top: -22rem;
+    padding-inline: 3rem;
+  }
 }
 .techs__container--mobile {
   margin-left: 14rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 2.6rem;
-  width: 100%;
+  padding-right: 6rem;
+  padding-left: 132rem;
+  width: 30rem;
   gap: 4rem;
-  flex-wrap: wrap;
-  margin-top: 15rem;
+  padding-bottom: 1rem;
+  overflow-y: hidden;
 }
 @media (min-width: 37.5rem) and (min-height: 37.5rem) {
   .techs__container--mobile {
@@ -820,12 +826,17 @@ ul {
   font-size: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
 }
 .techs__container--mobile li i {
-  font-size: 5rem;
+  font-size: 13rem;
+  color: #03232c;
+}
+.techs__container--mobile li:last-child {
+  visibility: hidden;
+  padding-left: 80rem;
 }
 .techs__container .swiper {
   max-width: 100%;
@@ -1377,12 +1388,15 @@ ul {
   border-radius: 4px 4px 0 0;
 }
 .projects__container-mobile--cards h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
   height: 6rem;
   background-color: #fff;
   width: clamp(15rem, 25vh, 25rem);
   box-shadow: 0 0 15px #03232c;
   border-radius: 0 0 4px 4px;
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 400;
 }
 .projects__container-mobile--cards:last-child {
   visibility: hidden;
