@@ -87,6 +87,7 @@ ul {
   background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
   position: relative;
   box-shadow: inset -1.5rem 0 2px #03232c;
+  grid-template-columns: 14rem 1fr;
 }
 @media (min-width: 37.5rem) and (min-height: 37.5rem) {
   .grid {
@@ -111,15 +112,8 @@ ul {
   opacity: 0;
   display: grid;
   background-image: linear-gradient(to bottom, #03232c, #035468);
-  position: absolute;
-  width: 12rem;
   z-index: 20;
-}
-@media (min-width: 37.5rem) and (min-height: 37.5rem) {
-  .nav {
-    width: 100%;
-    position: relative;
-  }
+  position: relative;
 }
 .nav::after {
   content: "";
@@ -130,6 +124,11 @@ ul {
   left: 0;
   position: absolute;
   z-index: 1;
+}
+@media (min-width: 37.5rem) and (min-height: 37.5rem) {
+  .nav {
+    width: 100%;
+  }
 }
 .nav__logo {
   width: 100%;
@@ -465,11 +464,13 @@ ul {
 }
 .home__container {
   display: grid;
-  width: 100%;
+  width: calc(100% + 14rem);
   min-height: 100%;
   place-content: center start;
   position: relative;
   overflow: hidden;
+  border: 1px solid red;
+  margin-left: -14rem;
 }
 @media (min-width: 37.5rem) and (min-height: 37.5rem) {
   .home__container {
@@ -626,8 +627,7 @@ ul {
   z-index: 1;
 }
 .about__container {
-  padding-left: 15rem;
-  padding-right: 4rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -814,7 +814,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: max-content;
   min-height: 100%;
   padding-right: 2rem;
   margin-top: -8rem;
@@ -827,14 +827,13 @@ ul {
   }
 }
 .techs__container--mobile {
-  margin-left: 14rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding-right: 6rem;
-  padding-left: 132rem;
-  width: 30rem;
+  padding-right: 0rem;
+  width: 100rem;
   gap: 4rem;
+  padding-left: 120rem;
   padding-bottom: 1rem;
   overflow-y: hidden;
 }
@@ -1196,7 +1195,6 @@ ul {
   width: clamp(20rem, 65vw, 65rem);
   border-radius: 4px;
   position: relative;
-  margin-left: 10.6rem;
   margin-top: 13.6rem;
   background-image: linear-gradient(to bottom, rgba(3, 35, 44, 0.8), rgba(3, 84, 104, 0.7));
 }
@@ -1380,12 +1378,12 @@ ul {
 .projects__container {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  margin-left: 12rem;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
   min-height: 100%;
   padding-bottom: 2rem;
-  margin-top: -4rem;
+  width: 100%;
 }
 @media (min-width: 37.5rem) and (min-height: 37.5rem) {
   .projects__container {

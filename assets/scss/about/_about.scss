@@ -72,21 +72,20 @@
   }
 
   &__container {
-    padding-left: 15rem;
-    padding-right: 4rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
-    max-width: 100%;      
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    min-height: 100%; 
+    min-height: 100%;
 
-    @include respond(phone) {      
+    @include respond(phone) {
       max-width: 100%;
       padding: 0;
       margin-top: -5rem;
-      padding:0 3rem 0 1rem;
+      padding: 0 3rem 0 1rem;
     }
 
     @include respond(tab-port) {
@@ -103,20 +102,20 @@
       border-radius: 4px;
       display: none;
 
-      @include respond(phone) {               
+      @include respond(phone) {
         display: block;
-        width:100%;
+        width: 100%;
         max-width: 80rem;
       }
 
       @include respond(tab-port) {
-       height: max-content;        
+        height: max-content;
       }
 
       img {
         border-radius: 4px;
         object-fit: cover;
-        max-width: 100%;       
+        max-width: 100%;
         object-position: center 70%;
         width: 100%;
         box-shadow: 0 0 35px $mycolor-primary-dark;
@@ -127,7 +126,7 @@
         }
 
         @include respond(tab-port) {
-          height: 40rem;        
+          height: 40rem;
         }
       }
     }
@@ -136,16 +135,16 @@
       height: max-content;
       display: flex;
       flex-direction: column;
-      gap: 4rem;   
+      gap: 4rem;
       align-items: center;
-      justify-content: center; 
+      justify-content: center;
 
       @include respond(phone) {
         padding-inline: 4rem;
         max-width: 100%;
       }
 
-      @include respond(tab-port) {       
+      @include respond(tab-port) {
         max-width: 60%;
       }
 
@@ -176,7 +175,7 @@
 
         @include respond(phone) {
           width: 25rem;
-          font-size: 2rem
+          font-size: 2rem;
         }
 
         i::before {

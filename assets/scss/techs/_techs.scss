@@ -83,10 +83,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: max-content;
     min-height: 100%; 
     padding-right: 2rem;
     margin-top: -8rem;
+    
+    
+
 
     @include respond(phone) {
       overflow: hidden;
@@ -94,15 +97,14 @@
       padding-inline: 3rem;
     }
 
-    &--mobile {
-      margin-left: 14rem;
+    &--mobile {     
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      padding-right: 6rem;
-      padding-left: 132rem;
-      width: 30rem;
+      padding-right: 0rem;      
+      width: 100rem;
       gap: 4rem;
+      padding-left: 120rem;
       padding-bottom: 1rem;
       overflow-y: hidden;
 

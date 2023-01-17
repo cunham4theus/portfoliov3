@@ -41,11 +41,13 @@
 
   &__container {
     display: grid;
-    width: 100%;
+    width: calc(100% + 14rem);
     min-height: 100%;    
     place-content: center start;
     position: relative;
     overflow: hidden;
+    border: 1px solid red;
+    margin-left: -14rem;
 
     @include respond(phone) {
       place-content: center;
