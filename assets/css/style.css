@@ -22,7 +22,6 @@ xxpx/16px = xxem       |
 html {
   scroll-behavior: smooth;
   font-size: 47.5%;
-  scroll-behavior: smooth;
   height: 100vh; /* fallback for Js load */
   height: 100%;
 }
@@ -68,10 +67,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-:root {
-  --doc-height: 100%;
 }
 
 .grid {

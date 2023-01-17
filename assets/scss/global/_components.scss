@@ -1,9 +1,6 @@
 @use '../global/variables' as *;
 @use '../global/mixins' as *;
 
-:root {
-  --doc-height: 100%;
-}
 
 // Grid container
 .grid {
@@ -32,7 +29,7 @@
 // Navigation
 .nav {
   width: 100%;
-  height: 100%; /* fallback for Js load */ 
+  height: 100%; /* fallback for Js load */  
   opacity: 0;
   display: grid;
   background-image: linear-gradient(
@@ -42,7 +39,6 @@
   ); 
   z-index: 20;
   position: relative;
-
   
   &::after {
     content: '';
@@ -64,7 +60,6 @@
     width: 100%;
    
   }
-
 
   &__logo {
     width: 100%;
@@ -285,7 +280,7 @@
     }
   }
 }
-//Button
+// Button
 .btn {
   position: relative;
   background-color: $mycolor-primary-dark;
