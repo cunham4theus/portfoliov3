@@ -23,6 +23,7 @@ html {
   scroll-behavior: smooth;
   font-size: 47.5%;
   scroll-behavior: smooth;
+  height: -webkit-fill-available;
 }
 @media (min-width: 59.37rem) and (min-height: 52.125rem) {
   html {
@@ -36,17 +37,18 @@ html {
 }
 
 body {
-  position: fixed;
   font-family: "Josefin Sans";
   font-size: 2rem;
   width: 100%;
-  height: 100%;
   font-family: "Josefin Sans";
   background: url("/assets/Img/bgHome.jpg") no-repeat;
   background-position: 50%;
   background-size: cover;
   z-index: -1;
   overflow: hidden;
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 body::after {
   content: "";
