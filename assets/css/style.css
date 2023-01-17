@@ -11,6 +11,10 @@
 xxpx/16px = xxem       |
 -----------------------------------------------°
 */
+:root {
+  --doc-height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -46,9 +50,8 @@ body {
   background-size: cover;
   z-index: -1;
   overflow: hidden;
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+  height: 100vh; /* fallback for Js load */
+  height: var(--doc-height);
 }
 body::after {
   content: "";
@@ -72,7 +75,7 @@ ul {
 .grid {
   display: grid;
   max-width: 140rem;
-  min-height: 100vh;
+  min-height: 100%;
   margin: 0 auto;
   background-color: #fff;
   background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
@@ -97,7 +100,7 @@ ul {
 
 .nav {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   opacity: 0;
   display: grid;
   background-image: linear-gradient(to bottom, #03232c, #035468);
@@ -450,13 +453,13 @@ ul {
 }
 
 .home {
-  min-height: 100vh;
+  min-height: 100%;
   position: relative;
 }
 .home__container {
   display: grid;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   place-content: center start;
   position: relative;
   overflow: hidden;

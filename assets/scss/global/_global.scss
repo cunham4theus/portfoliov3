@@ -1,6 +1,10 @@
 @use '../global/variables' as *;
 @use '../global/mixins' as *;
 
+:root {
+  --doc-height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -24,19 +28,18 @@ html {
   }
 }
 
-body {  
+body {
   font-family: 'Josefin Sans';
   font-size: 2rem;
-  width: 100%; 
+  width: 100%;
   font-family: 'Josefin Sans';
   background: url('/assets/Img/bgHome.jpg') no-repeat;
   background-position: 50%;
   background-size: cover;
   z-index: -1;
   overflow: hidden;
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
+  height: 100vh; /* fallback for Js load */
+  height: var(--doc-height);
 
   &::after {
     content: '';

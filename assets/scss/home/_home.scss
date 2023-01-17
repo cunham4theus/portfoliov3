@@ -36,13 +36,13 @@
 //Home
 
 .home {
-  min-height: 100vh;
+  min-height: 100%;
   position: relative;
 
   &__container {
     display: grid;
     width: 100%;
-    min-height: 100vh;    
+    min-height: 100%;    
     place-content: center start;
     position: relative;
     overflow: hidden;
