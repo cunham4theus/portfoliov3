@@ -1,6 +1,5 @@
-
 //carousel
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper('.mySwiper', {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
@@ -8,12 +7,12 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
 
@@ -59,14 +58,16 @@ TweenMax.from('.swiper', 1, {
   x: 800,
   ease: Expo.easeInOut,
 });
-TweenMax.staggerFrom('.swiper-slide ul li', 1,   
+TweenMax.staggerFrom(
+  '.swiper-slide ul li',
+  1,
   {
     delay: 4.6,
     opacity: 0,
     x: -100,
     ease: Expo.easeInOut,
   },
-  0.08
+  0.08,
 );
 TweenMax.staggerFrom(
   '.media ul li',
@@ -85,3 +86,11 @@ TweenMax.from('.footer', 1, {
   x: 200,
   ease: Expo.easeInOut,
 });
+
+// bug height fixed
+const documentHeight = () => {
+  const doc = document.documentElement;
+  doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
+};
+window.addEventListener('resize', documentHeight);
+documentHeight();

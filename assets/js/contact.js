@@ -104,3 +104,11 @@ TweenMax.from('.footer', 1, {
   x: 200,
   ease: Expo.easeInOut,
 });
+
+// bug height fixed
+const documentHeight = () => {
+  const doc = document.documentElement;
+  doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
+};
+window.addEventListener('resize', documentHeight);
+documentHeight();

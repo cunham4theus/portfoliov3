@@ -1,5 +1,3 @@
-
-
 TweenMax.to('.home__overlay', 2, {
   delay: 2,
   top: '100%',
@@ -13,7 +11,7 @@ TweenMax.to('.home__overlay', 2, {
 });
 
 TweenMax.to('.nav', 2, {
-  delay: 2.3,  
+  delay: 2.3,
   opacity: 1,
   ease: Expo.easeInOut,
 });
@@ -81,10 +79,9 @@ TweenMax.from('.footer', 1, {
   ease: Expo.easeInOut,
 });
 
-
 const documentHeight = () => {
-  const doc = document.documentElement
-  doc.style.setProperty('--doc-height', `${window.innerHeight}px`)
- }
- window.addEventListener('resize', documentHeight)
- documentHeight()
+  const doc = document.documentElement;
+  doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
+};
+window.addEventListener('resize', documentHeight);
+documentHeight();
