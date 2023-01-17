@@ -106,7 +106,6 @@ ul {
   background-image: linear-gradient(to bottom, #03232c, #035468);
   z-index: 20;
   position: relative;
-  padding: 1rem;
 }
 .nav::after {
   content: "";
@@ -125,7 +124,6 @@ ul {
 }
 .nav__logo {
   width: 100%;
-  flex: 0 0 70%;
   display: flex;
   text-align: center;
   justify-content: center;

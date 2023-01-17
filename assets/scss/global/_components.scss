@@ -41,7 +41,7 @@
   ); 
   z-index: 20;
   position: relative;
-  padding: 1rem;
+  
   
   &::after {
     content: '';
@@ -64,13 +64,13 @@
   }
 
   &__logo {
-    width: 100%;
-    flex: 0 0 70%;
+    width: 100%;    
     display: flex;
     text-align: center;
     justify-content: center;
     position: relative;   
     z-index: 10;
+   
 
     &__title {
       text-transform: uppercase;
