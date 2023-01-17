@@ -27,7 +27,8 @@ html {
   scroll-behavior: smooth;
   font-size: 47.5%;
   scroll-behavior: smooth;
-  height: -webkit-fill-available;
+  height: 100vh; /* fallback for Js load */
+  height: var(--doc-height);
 }
 @media (min-width: 59.37rem) and (min-height: 52.125rem) {
   html {
@@ -52,6 +53,7 @@ body {
   overflow: hidden;
   height: 100vh; /* fallback for Js load */
   height: var(--doc-height);
+  position: relative;
 }
 body::after {
   content: "";
