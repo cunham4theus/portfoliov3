@@ -3,6 +3,7 @@
 
 .projects {
   overflow: hidden;
+  min-height: 100%;
   align-items: center;
 
   &__overlay--1 {
@@ -70,18 +71,17 @@
       z-index: 1;
     }
   }
-  
+
   &__container {
     display: flex;
-    flex-direction: column; 
-    align-items: left;     
-    margin-left: 12rem;       
+    flex-direction: column;
+    align-items: left;
+    margin-left: 12rem;
     width: 100%;
-    height: max-content;
+    min-height: 100%;
     padding-bottom: 2rem;
     margin-top: -4rem;
-   
-    
+
     @include respond(phone) {
       overflow: hidden;
       margin: 0;
@@ -91,48 +91,48 @@
       align-items: center;
       justify-content: center;
       margin-top: -8rem;
-     } 
-    
+    }
+
     &-mobile {
-      display: flex;         
+      display: flex;
       z-index: 20;
-      gap: 2rem;  
+      gap: 2rem;
       place-content: left;
-      margin-left: 2rem;      
+      margin-left: 2rem;
       width: calc(40rem);
-      overflow-y: hidden;  
+      overflow-y: hidden;
       padding: 4rem 2rem;
 
       @include respond(phone) {
-       display: none;
-      }     
+        display: none;
+      }
 
-      &--cards {           
+      &--cards {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;            
-        box-shadow: 0 0 15px $mycolor-primary-dark;  
-        border-radius: 4px;   
-        width: clamp(15rem, 25vh, 25rem);  
+        align-items: center;
+        box-shadow: 0 0 15px $mycolor-primary-dark;
+        border-radius: 4px;
+        width: clamp(15rem, 25vh, 25rem);
         height: clamp(15rem, 40vh, 40rem);
 
         img {
-          width:  clamp(15rem, 25vh, 25rem);
-          height: clamp(15rem, 40vh, 40rem);          
+          width: clamp(15rem, 25vh, 25rem);
+          height: clamp(15rem, 40vh, 40rem);
           object-fit: cover;
           object-position: center;
-          box-shadow: 0 0 15px $mycolor-primary-dark; 
-          border-radius: 4px 4px 0 0; 
+          box-shadow: 0 0 15px $mycolor-primary-dark;
+          border-radius: 4px 4px 0 0;
         }
 
         h1 {
-          font-size: 2.4rem;   
-          height: 6rem;   
-          background-color: $mycolor-primary-light;   
-          width:  clamp(15rem, 25vh, 25rem); 
-          box-shadow: 0 0 15px $mycolor-primary-dark;  
-          border-radius: 0 0 4px 4px; 
+          font-size: 2.4rem;
+          height: 6rem;
+          background-color: $mycolor-primary-light;
+          width: clamp(15rem, 25vh, 25rem);
+          box-shadow: 0 0 15px $mycolor-primary-dark;
+          border-radius: 0 0 4px 4px;
           text-align: center;
           padding-top: 1rem;
           font-weight: 400;
@@ -141,7 +141,6 @@
 
       &--cards:last-child {
         visibility: hidden;
-       
       }
     }
 
@@ -152,7 +151,7 @@
 
       @include respond(phone) {
         display: block;
-       } 
+      }
 
       .swiper-wrapper {
         z-index: 20;
@@ -219,27 +218,27 @@
               z-index: 20;
               text-transform: uppercase;
               font-weight: 400;
-              background-color: $mycolor-primary-dark;  
+              background-color: $mycolor-primary-dark;
 
               span {
-                font-size: 1.8rem;               
-              }      
-              
-              i::before{
+                font-size: 1.8rem;
+              }
+
+              i::before {
                 background-image: linear-gradient(
-                  to bottom,            
+                  to bottom,
                   rgba(darken($mycolor-primary-dark-2, 1%), 1),
-                  rgba(darken($mycolor-primary-dark, 1%), 1),
+                  rgba(darken($mycolor-primary-dark, 1%), 1)
                 );
               }
               i::after {
                 background-image: linear-gradient(
-                  to bottom,           
+                  to bottom,
                   rgba(darken($mycolor-primary-dark, 1%), 1),
-                  rgba(darken($mycolor-primary-dark-2, 1%), 1),
-                );          
+                  rgba(darken($mycolor-primary-dark-2, 1%), 1)
+                );
               }
-            }           
+            }
           }
         }
         .swiper-slide:nth-child(even) {
@@ -247,23 +246,23 @@
             to bottom,
             rgba(#222, 1),
             rgba($mycolor-primary, 1)
-          );  
+          );
           .btn {
             background-color: $mycolor-primary-dark;
 
-            i::before{
+            i::before {
               background-image: linear-gradient(
-                to bottom,            
+                to bottom,
                 rgba(darken($mycolor-primary, 10%), 1),
-                rgba(darken($mycolor-primary-dark, 20%), 1),
+                rgba(darken($mycolor-primary-dark, 20%), 1)
               );
             }
             i::after {
               background-image: linear-gradient(
-                to bottom,           
+                to bottom,
                 rgba(darken($mycolor-primary-dark, 20%), 1),
-                rgba(darken($mycolor-primary, 10%), 1),
-              );          
+                rgba(darken($mycolor-primary, 10%), 1)
+              );
             }
           }
           .btn::before {
@@ -272,7 +271,7 @@
             inset: 1.5px;
             background-image: linear-gradient(
               to bottom,
-              rgba( darken($mycolor-primary, 10%), 1),
+              rgba(darken($mycolor-primary, 10%), 1),
               rgba(darken(#000, 1%), 1)
             );
           }
@@ -281,7 +280,6 @@
     }
   }
 }
-
 
 @keyframes go-right {
   0% {

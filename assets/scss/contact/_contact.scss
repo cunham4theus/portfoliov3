@@ -2,7 +2,9 @@
 @use '../global/mixins' as *;
 
 .contact {
+  min-height: 100%; 
   overflow: hidden;
+
   &__overlay--1 {
     position: absolute;
     width: 100%;
@@ -44,6 +46,7 @@
     padding-inline: 1rem 2rem;
     gap: 1rem;
     margin-top: -16rem;
+    min-height: 100%; 
     
    
     @include respond(phone) {
