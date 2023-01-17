@@ -5,8 +5,7 @@
 .grid {
   display: grid;
   max-width: 140rem;
-  margin: 0 auto;
-  height: 100%;
+  margin: 0 auto; 
   min-height: 100%;
   contain-intrinsic-height: 100%;
   background-color: $mycolor-primary-light;
