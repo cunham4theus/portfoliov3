@@ -1,9 +1,9 @@
 @use '../global/variables' as *;
 @use '../global/mixins' as *;
 
-:root {
-  --doc-height: 100%;
-}
+
+$--doc-height: 100%;
+
 
 *,
 *::before,
@@ -18,7 +18,7 @@ html {
   font-size: 47.5%;
   scroll-behavior: smooth;
   height: 100vh; /* fallback for Js load */
-  height: var(--doc-height); 
+  height: $--doc-height; 
 
   @include respond(tab-port) {
     font-size: 50%;
@@ -40,7 +40,7 @@ body {
   z-index: -1;
   overflow: hidden;
   height: 100vh; /* fallback for Js load */
-  height: var(--doc-height);
+  height: $--doc-height;
   position: relative;
 
   &::after {

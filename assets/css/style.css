@@ -11,10 +11,6 @@
 xxpx/16px = xxem       |
 -----------------------------------------------°
 */
-:root {
-  --doc-height: 100%;
-}
-
 *,
 *::before,
 *::after {
@@ -28,7 +24,7 @@ html {
   font-size: 47.5%;
   scroll-behavior: smooth;
   height: 100vh; /* fallback for Js load */
-  height: var(--doc-height);
+  height: 100%;
 }
 @media (min-width: 59.37rem) and (min-height: 52.125rem) {
   html {
@@ -52,7 +48,7 @@ body {
   z-index: -1;
   overflow: hidden;
   height: 100vh; /* fallback for Js load */
-  height: var(--doc-height);
+  height: 100%;
   position: relative;
 }
 body::after {
