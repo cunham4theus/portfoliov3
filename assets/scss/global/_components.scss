@@ -33,7 +33,7 @@
 .nav {
   width: 100%;
   height: 100%; /* fallback for Js load */
-  height: var(--doc-height);
+  height: $--doc-height;
   opacity: 0;
   display: grid;
   background-image: linear-gradient(
