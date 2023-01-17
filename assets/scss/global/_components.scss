@@ -33,7 +33,8 @@
   opacity: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start; 
+  gap: 4rem;
   background-image: linear-gradient(
     to bottom,
     rgba($mycolor-primary-dark, 1),
@@ -60,7 +61,8 @@
   }
 
   @include respond(phone) {
-    width: 100%;   
+    width: 100%;  
+    justify-content: space-between; 
   }
 
   &__logo {
@@ -114,7 +116,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    text-align: right;
+    text-align: center;
     padding-bottom: 2rem;
     width: 100%;
     z-index: 10;
@@ -122,6 +124,7 @@
 
     @include respond(phone) {
       padding-bottom: 5rem;
+      text-align: right;
     }
 
     @include respond(tab-port) {
@@ -129,7 +132,9 @@
     }
 
     &-items {
-      height: 2.6rem;
+      height: 2.6rem;       
+      display: flex;
+      align-items: center;
 
       @include respond(phone) {
         height: 3rem;
@@ -144,11 +149,13 @@
         font-size: 1.4rem;
         font-weight: 300;
         text-transform: uppercase;
-        width: 100%;
-        display: block;
-        padding: 0.5rem;
+        width: 100%;             
+        display: flex;
+        justify-content: center;        
 
         @include respond(phone) {
+          justify-content: end;
+          align-items: flex-start;
           font-size: 1.8rem;
           font-weight: 300;
         }
