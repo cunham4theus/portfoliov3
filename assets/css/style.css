@@ -70,7 +70,7 @@ ul {
   display: grid;
   max-width: 140rem;
   margin: 0 auto;
-  height: 100%;
+  min-height: 100vh;
   contain-intrinsic-height: 100%;
   background-color: #fff;
   background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
@@ -449,7 +449,7 @@ ul {
 
 .home {
   height: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   contain-intrinsic-height: 100%;
   position: relative;
 }
