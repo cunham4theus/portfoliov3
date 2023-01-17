@@ -29,6 +29,8 @@ body {
   font-family: 'Josefin Sans';
   font-size: 2rem;
   width: 100%; 
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   font-family: 'Josefin Sans';
   background: url('/assets/Img/bgHome.jpg') no-repeat;
   background-position: 50%;
