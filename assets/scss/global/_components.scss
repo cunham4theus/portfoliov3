@@ -39,6 +39,7 @@
   ); 
   z-index: 20;
   position: relative;
+  padding: 1rem;
   
   &::after {
     content: '';
