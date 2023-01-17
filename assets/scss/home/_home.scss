@@ -36,16 +36,14 @@
 }
 //Home
 
-.home { 
-  height: 100%;
+.home {   
   min-height: 100vh;
   contain-intrinsic-height: 100%;
   position: relative;  
  
 
   &__container {
-    display: grid;
-    height: 100%;
+    display: grid;   
     width: 100%;
     place-content: center start;
     position: relative;

@@ -448,14 +448,12 @@ ul {
 }
 
 .home {
-  height: 100%;
   min-height: 100vh;
   contain-intrinsic-height: 100%;
   position: relative;
 }
 .home__container {
   display: grid;
-  height: 100%;
   width: 100%;
   place-content: center start;
   position: relative;
