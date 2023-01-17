@@ -469,7 +469,6 @@ ul {
   place-content: center start;
   position: relative;
   overflow: hidden;
-  border: 1px solid red;
   margin-left: -14rem;
 }
 @media (min-width: 37.5rem) and (min-height: 37.5rem) {
